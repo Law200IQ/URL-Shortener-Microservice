@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener Microservice</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>URL Shortener Microservice</h1>
+  <main>
+    <section>
+      <form action="api/shorturl" method="POST">
+        <fieldset>
+          <legend>URL Shortener</legend>
+          <label for="url_input">URL:</label>
+          <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+          <input type="submit" value="POST URL" />
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <h3>Example Usage:</h3>
+      <p>
+        <code>[this_project_url]/api/shorturl/1</code>
+      </p>
+      <h3>Will Redirect to:</h3>
+      <p>Your original URL</p>
+    </section>
+  </main>
+</body>
+</html> 
